@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/subir-archivo" method="post" enctype="multipart/form-data">
+        <label for="archivo">Selecciona un archivo:</label>
+        <input type="file" id="archivo" name="archivo" required>
+
+
+        <input type="submit" value="Subir archivo">
+    </form>
+
+
+
+    <h3>¿Qué atributo se utiliza para especificar la URL a la que se enviarán los datos del formulario? a) method b)
+        action c) target d) url
+    </h3>
+    <p>La opcion correcta es la B</p>
+
+    <h3>¿Cuál es el atributo que se utiliza para especificar el tipo de datos que se espera en un campo de entrada? a)
+        data-type b) input-type c) type d) data
+    </h3>
+    <p>La opcion correcta es la C</p>
+
+    <h3>¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar direcciones de correo electrónico? a)
+        text b) email c) mail d) input
+    </h3>
+    <p>La opcion correcta es la B</p>
+
+    <h3>¿Cuál es el elemento HTML que se utiliza para asociar un texto descriptivo con un campo de entrada en un
+        formulario? a) <description> b) <info> c) <placeholder>
+                    d) <label> </h3>
+    <p>La opcion correcta es D</p>
+
+    <h3>¿Cuál de las siguientes opciones es la etiqueta correcta para crear un botón de envío en un formulario? a)
+        <input type="submit"> b) <button type="submit">
+            c) <btn> d) <submit>
+    </h3>
+    <p>La opcion correcta es A</p>
+
+    <h3>¿Cuál de los siguientes atributos se utiliza para hacer que un campo de entrada sea obligatorio en un
+        formulario? a) required b) mandatory c) validate
+        d) mandatoryfield</h3>
+    <p>La opcion correcta es A</p>
+
+    <h3>¿Cuál de los siguientes elementos HTML se utiliza para crear una lista desplegable en un formulario? a) <list>
+            b) <dropdown> c) <select> d) <input type="list">
+    </h3>
+    <p>La opcion correcta es C</p>
+
+    <h3>¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar un apellido? a) text b) email c) mail
+        d) input
+    </h3>
+    <p>La opcion correcta es A</p>
+
+    <h3>¿Qué atributo se utiliza para definir un valor predeterminado en un campo de entrada de un formulario? a) value
+        b) default c) preset d) initial
+    </h3>
+    <p>La opcion correcta es A</p>
+
+    <h3>¿Qué son los métodos / verbos de petición HTTP? Dar ejemplos. Bibliografía MDN</h3>
+    <p>Los metodos de peticion HTTP indican la acción que se desea realizar para un recurso determinado. </p>
+    <p>EJEMPLO:
+        PUT:crea un nuevo elemento o reemplaza una representación del elemento de destino con los datos de la petición
+    </p>
+    <p> GET:solicita una representación del recurso especificado. Las solicitudes que usan GET solo deben usarse para
+        recuperar datos (no deben incluir datos)</p>
+
+    <H3>¿Qué son los códigos de estado de respuestas HTTP? Realizar una tabla con su clasificación. Bibliografía MDN
+    </H3>
+    <P>Los codigos de estado indican si se ha completado satisfactoriamente una solicitud HTTP específica</P>
+    <p>Las respuestas se agrupan en cinco clases:
+
+    <table>
+        <tr>
+            <td>1-Respuestas informativas</td>
+            <td>(100–199)</td>
+        </tr>
+
+        <tr>
+            <td> 2-Respuestas satisfactorias</td>
+            <td>(200–299)</td>
+
+        </tr>
+        <tr>
+            <td>3-Redirecciones</td>
+            <td>(300–399)</td>
+        </tr>
+        <tr>
+            <td>4-Errores de los clientes</td>
+            <td>(400–499)</td>
+
+        </tr>
+        <tr>
+            <td>5-y errores de los servidores</td>
+            <td>(500–599)</td>
+
+        </tr>
+    </table>
+
+
+    <h3>FORMULARIOS</h3>
+    <form action="/registro" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre Y apellido">Nombre:</label>
+            <input type="text" id="nombre y apellido" name="nombre y apellido" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+
+            <label for="fecha de nacimiento">fecha:</label>
+            <input type="date" id="fecha de nacimiento" name="fecha de nacimiento" required>
+
+            <label for="DNI">DNI:</label>
+            <input type="DNI" id="DNI" name="DNI" required>
+
+            <label for="numero de telefono">numero de telefono:</label>
+            <input type="numero de telefono" id="numero de telefono" name="numero de telefono" required>
+
+
+            <label for="usuario de x">usuario de X:</label>
+            <input type="text" id="usuario de x" name="usuario de x" required>
+
+            <label for="usuario de instagram">usuario de instagram:</label>
+            <input type="text" id="usuario de instagram" name="usuario de instagram" required>
+        </fieldset>
+        <fieldset>
+            <legend>Localizacion</legend>
+            <label for="provincia">Provincia:</label>
+            <select id="provincia" name="provincia" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Cordoba">Cordoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Rios">Entre Rios</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquen">Neuquen</option>
+                <option value="Rio Negro">Rio Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Santiago Del Estero">Santiago Del Estero</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                <option value="Tucuman">Tucuman</option>
+            </select>
+            <label for="Ciudad">Ciudad:</label>
+            <input type="text" id="Ciudad" name="Ciudad" required>
+        </fieldset>
+        <fieldset>
+            <legend>Preferencia de Autos</legend>
+
+            <label for="Preferenciasdeautos">Preferencias de autos:</label>
+            <input type="checkbox" id="Autos1" name="Autos" value="Peugeot 208"> <label for="Autos1">Peugeot 208</label>
+            <input type="checkbox" id="Autos2" name="Autos" value="BMW"> <label for="Autos2">BMW</label>
+            <input type="checkbox" id="Autos3" name="Autos" value="Bora"> <label for="Autos3">Bora</label>
+
+            <input type="submit" value="Enviar">
+        </fieldset>
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
